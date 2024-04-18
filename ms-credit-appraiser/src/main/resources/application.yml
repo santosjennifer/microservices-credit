@@ -1,0 +1,25 @@
+spring:
+   application:
+      name: ms-credit-appraiser
+   rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+      
+server:
+   port: 0
+   
+eureka:
+   instance:
+      instance-id: ${spring.application.name}:${spring.cloud.application.instance_id:${random.value}}
+      hostname: localhost
+      statusPageUrlPath: /actuator/health
+   client:
+      register-with-eureka: true
+      serviceUrl:
+         defaultZone: http://eureka-user:usr-eureka@localhost:8761/eureka
+
+mq:
+  queues:
+    card-issuance: card-issuance

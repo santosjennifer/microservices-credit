@@ -1,0 +1,27 @@
+spring:
+   application:
+      name: ms-gateway
+   cloud:
+      gateway:
+         discovery:
+            locator:
+               enable: true
+               lower-case-service-id: true
+   security:
+      oauth2:
+         resourceserver:
+            jwt:
+               issuer-uri: http://localhost:8081/realms/mscredit
+
+server:
+   port: 8080
+
+eureka:
+   instance:
+      instance-id: ${spring.application.name}
+      hostname: localhost
+      statusPageUrlPath: /actuator/health
+   client:
+      register-with-eureka: true
+      serviceUrl:
+         defaultZone: http://eureka-user:usr-eureka@localhost:8761/eureka
