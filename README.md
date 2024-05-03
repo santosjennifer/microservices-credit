@@ -1,4 +1,4 @@
-![Last Commit](https://img.shields.io/github/last-commit/santosjennifer/rest-microservice)
+![Last Commit](https://img.shields.io/github/last-commit/santosjennifer/microservices-credit)
 
 ### Repositório com os serviços eureka-server, ms-gateway, ms-customer, ms-card e ms-credit-appraiser.
 
