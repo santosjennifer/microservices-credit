@@ -1,3 +1,6 @@
+# Logs
+/ms-card/logs/
+
 # Package Files #
 *.jar
 *.war
