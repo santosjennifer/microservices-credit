@@ -6,13 +6,13 @@ import com.jads.model.CardBrand;
 
 public class CardResponse {
 
-    private String id;
+    private Long id;
     private String name;
     private CardBrand brand;
     private BigDecimal income;
     private BigDecimal basicLimit;
 
-	public CardResponse(String id, String name, CardBrand brand, BigDecimal income, BigDecimal basicLimit) {
+	public CardResponse(Long id, String name, CardBrand brand, BigDecimal income, BigDecimal basicLimit) {
 		this.id = id;
 		this.name = name;
 		this.brand = brand;
@@ -20,10 +20,10 @@ public class CardResponse {
 		this.basicLimit = basicLimit;
 	}
 	
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {

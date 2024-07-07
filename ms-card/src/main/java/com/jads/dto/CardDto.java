@@ -7,7 +7,7 @@ import com.jads.model.CardBrand;
 
 public class CardDto {
 
-    private String id;
+    private Long id;
     private String name;
     private CardBrand brand;
     private BigDecimal income;
@@ -26,10 +26,10 @@ public class CardDto {
 		this.basicLimit = basicLimit;
 	}
 	
-	public String getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {

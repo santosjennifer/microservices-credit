@@ -15,8 +15,8 @@ import jakarta.validation.constraints.NotNull;
 public class Card {
 	
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     
     @NotBlank(message = "O nome do cartão de ser informado")
     private String name;
@@ -31,10 +31,10 @@ public class Card {
     @NotNull(message = "O limite básico do cartão deve ser informado")
     private BigDecimal basicLimit;
     
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {

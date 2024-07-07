@@ -4,15 +4,15 @@ import java.math.BigDecimal;
 
 public class CardIssuanceDataDto {
 
-    private String cardId;
+    private Long cardId;
     private String cpf;
     private String address;
     private BigDecimal availableLimit;
     
-	public String getCardId() {
+	public Long getCardId() {
 		return cardId;
 	}
-	public void setCardId(String cardId) {
+	public void setCardId(Long cardId) {
 		this.cardId = cardId;
 	}
 	public String getCpf() {
