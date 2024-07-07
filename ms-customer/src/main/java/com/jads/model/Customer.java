@@ -1,5 +1,7 @@
 package com.jads.model;
 
+import org.hibernate.validator.constraints.br.CPF;
+
 import com.jads.dto.CustomerDto;
 
 import jakarta.persistence.Column;
@@ -17,6 +19,7 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private String id;
 	
+	@CPF(message = "O cpf deve ser válido")
 	@Column(unique = true)
 	@NotBlank(message = "O cpf deve ser informado")
 	private String cpf;
